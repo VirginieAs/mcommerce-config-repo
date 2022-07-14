@@ -19,4 +19,4 @@ logging:
         mproducts: INFO
 
 mes-configs:
-  limitDeProduits: 5
+  limitDeProduits: 4
