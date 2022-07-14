@@ -20,3 +20,8 @@ logging:
 
 mes-configs:
   limitDeProduits: 4
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
