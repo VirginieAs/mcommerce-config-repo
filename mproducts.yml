@@ -1,27 +1,22 @@
 #Tomcat configuration
 server:
- port: 9001
- 
- #Log level configuration
+  port: 9001
+
+  #Log level configuration
 logging:
- level:
-   root: ERROR
-   org:
-     springframework:
-       boot:
-         autoconfigure:
-           h2: INFO
-         web:
-           embedded:
-             tomcat: INFO
-   com:
-     oc:
-       mproducts: INFO
+  level:
+    root: ERROR
+    org:
+      springframework:
+        boot:
+          autoconfigure:
+            h2: INFO
+          web:
+            embedded:
+              tomcat: INFO
+    com:
+      oc:
+        mproducts: INFO
 
 mes-configs:
   limitDeProduits: 4
-
-spring:
-  mvc:
-    pathmatch:
-      matching-strategy: ant_path_matcher
