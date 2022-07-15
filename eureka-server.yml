@@ -6,6 +6,24 @@ spring:
   application:
     name: eureka-server
 
+#Log level configuration
+logging:
+  level:
+    root: ERROR
+    org:
+      springframework:
+        boot:
+          autoconfigure:
+            h2: INFO
+          web:
+            embedded:
+              tomcat: INFO
+    com:
+      netflix:
+        discovery: WARN
+      oc:
+        eurekaserver: INFO
+
 eureka:
   client:
     fetchRegistry: false
