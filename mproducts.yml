@@ -2,7 +2,17 @@
 server:
   port: 9001
 
-  #Log level configuration
+spring:
+  thymeleaf:
+    cache: false
+  jpa:
+    defer-datasource-initialization: true
+    show-sql: true 
+  h2:
+    console:
+      enabled: true
+
+#Log level configuration
 logging:
   level:
     root: ERROR
@@ -19,4 +29,9 @@ logging:
         mproducts: INFO
 
 mes-configs:
-  limitDeProduits: 7
+  limitDeProduits: 3
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9102/eureka/
