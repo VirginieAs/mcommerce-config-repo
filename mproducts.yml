@@ -1,7 +1,4 @@
 #Tomcat configuration
-server:
-  port: 9001
-
 spring:
   thymeleaf:
     cache: false
